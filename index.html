@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-warning bg-dark">
+        <a class="navbar-brand" href="#"> Predicting ML Algorithms </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent ">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Stats
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./analytics/heatmap.html"> Heatmap </a>
+                        <a class="dropdown-item" href="./analytics/boxplot.html"> Boxplot </a>
+                        <a class="dropdown-item" href="./analytics/pairplot.html"> Pairplot </a>
+                        <a class="dropdown-item" href="./analytics/distplot.html"> Distplot </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <p><b><center> Dataset - Wine Quality Dataset </center></b></p>
+    <div class="card-group">
+        <div class="col-md-12">
+            <div class="card-deck">
+                <div class="card border-primary text-white bg-primary">
+                    <img src="/Images/Corelation.jpg" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Heatmap </h5>
+                        <p class="card-text"> Helps To Find Correlation </p>
+                        <a href="./analytics/heatmap.html" class="btn btn-light">Show</a>
+                    </div>
+                </div>
+                <div class="card border-dark text-white bg-dark">
+                    <img src="/Images/Boxplot.jpg" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Boxplot </h5>
+                        <p class="card-text"> Helps To Check Outliers </p>
+                        <a href="./analytics/boxplot.html" class="btn btn-light">Show</a>
+                    </div>
+                </div>
+                <div class="card border-primary text-white bg-primary">
+                    <img src="/Images/Pairplot.png" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Pairplot </h5>
+                        <p class="card-text"> To Explore Distributions and Relationships </p>
+                        <a href="./analytics/pairplot.html" class="btn btn-light">Show</a>
+                    </div>
+                </div>
+                <div class="card border-dark text-white bg-dark">
+                    <img src="/Images/Distplot.png" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Distplot </h5>
+                        <p class="card-text"> Helps To Check Distribution Skewness </p>
+                        <a href="./analytics/distplot.html" class="btn btn-light">Show</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
